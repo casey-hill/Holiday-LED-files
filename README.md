@@ -43,11 +43,32 @@ Tools
 - wire strippers
 - screws
 
-1st Home Assistant setup
+Overall process
+- Home assistant OS install
+- Home assistant configuration
+- Home assisant configure MQTT 
+- Home assistant add the lights
+
+Home Assistant OS install
 
 I had actually no problems following the setup guides mentioned online.  DrZzes tells you to follow Ben's video which I linked above.  However things have changed since Ben's video.  If you follow his guide completely, you'll end up running into trouble.
 
-Follow his video https://www.youtube.com/watch?v=9KI36GTgwuQ to install the home assistant.  STOP after the installation, do NOT do the additonal steps in his video as they are not necessary for you (MQRTT, SAMBA share)
+Follow his video https://www.youtube.com/watch?v=9KI36GTgwuQ to install the home assistant OS on the card, place the card in the Pi and power it up.  I'm going to assume you can figure out how to connect at this point, you should assign it a static ip address and connect via ip address as opposed to the the name of the Pi.
+
+Now, it is imporant to undestand, Ben provides a lot of good tips in the entire video so please watch it all.  I'll call out his tips on: checking the configuration file and restarting the server.  I would ignore the MQTT installation and Samba installation sections as they are not necessary for this setup.
+
+Configuration of Home Assistant
+Walk through the setup questions.  Once you are logged in, you will want to install the web based editor.  Ben described how to do this above, so this is one step you will follow.  That is it, you don't need to install or add anything additional.  MQTT broker is already installed on this version of the Hass.io.
+
+**TIP** - Edit your configuraiton.yaml file.  Add one line to the end of the file (later you'll be asked for the username which is in the documentatation; homeassistant); you don't need to put in a ip address or port number as others have mentioned
+MQTT
+ password: makeoneyoucanremember
+ 
+At this point, do a configuration file check and reboot the server.
+
+Once the Home Assistant is up and running, check the log file to verify there are no issues.
+
+
 
 
 
