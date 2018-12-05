@@ -61,6 +61,7 @@ Configuration of Home Assistant
 Walk through the setup questions.  Once you are logged in, you will want to install the web based editor.  Ben described how to do this above, so this is one step you will follow.  That is it, you don't need to install or add anything additional.  MQTT broker is already installed on this version of the Hass.io.
 
 **TIP** - Edit your configuraiton.yaml file.  Add one line to the end of the file (later you'll be asked for the username which is in the documentatation; homeassistant); you don't need to put in a ip address or port number as others have mentioned
+
 MQTT
  password: makeoneyoucanremember
  
@@ -88,15 +89,12 @@ Next.... updating the Arduino
 
 FAQ
 Q. Why are the first 10 or so lights turning on but the rest of the string is off?
-
 A.  If you didn't use a power supply, you'll need to purchase the above.  If you have the power supply connected, then the code you have on the Arduino is not properly configured or you are using the wrong pin.
 
 Q. My switches are not using up on Home Assistant
-
 A. Did you install the 3rd party MQTT add-in? I would suggest removing it and using the built-in broker.
 
 Q. I noticed after I restarted my server that there are errors.
-
 A. Click on the error and review the error in the configuration.yaml file.  Likely the problem will exist there since nothing else is changing.
 
 
