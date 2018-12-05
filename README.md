@@ -74,6 +74,7 @@ Home Assistant MQTT Configuration
 As I mentioned above, all you need to do is add MQTT at the end of the configuration.yaml file and add the password.  Don't specifiy the username as it is already preconfigured as homeassistant.
 
 Home Assistant adding the lights
+
 Up to this point, you have installed Home Assistant and enabled the use of MQTT with a password of your choice.  It's now time to configure Home Assistant to how the light switch, theme and animation speeds.
 
 Doing this is super simple, just navigate to the end of the configuration.yaml file and past in the particial Configuration.yaml file that DrZzs provided.
@@ -81,6 +82,23 @@ Doing this is super simple, just navigate to the end of the configuration.yaml f
 Now check the configuration file and reboot the server.
 
 Once the server is up and running, you should see the new buttons added.
+
+Next.... updating the Arduino
+
+
+FAQ
+Q. Why are the first 10 or so lights turning on but the rest of the string is off?
+A.  If you didn't use a power supply, you'll need to purchase the above.  If you have the power supply connected, then the code you have on the Arduino is not properly configured or you are using the wrong pin.
+
+Q. My switches are not using up on Home Assistant
+A. Did you install the 3rd party MQTT add-in? I would suggest removing it and using the built-in broker.
+
+Q. I noticed after I restarted my server that there are errors.
+A. Click on the error and review the error in the configuration.yaml file.  Likely the problem will exist there since nothing else is changing.
+
+
+
+
 
 
 
