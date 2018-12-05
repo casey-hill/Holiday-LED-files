@@ -66,7 +66,24 @@ MQTT
  
 At this point, do a configuration file check and reboot the server.
 
-Once the Home Assistant is up and running, check the log file to verify there are no issues.
+Once the Home Assistant is up and running, check the log file to verify there are no issues. 
+
+
+Home Assistant MQTT Configuration
+
+As I mentioned above, all you need to do is add MQTT at the end of the configuration.yaml file and add the password.  Don't specifiy the username as it is already preconfigured as homeassistant.
+
+Home Assistant adding the lights
+Up to this point, you have installed Home Assistant and enabled the use of MQTT with a password of your choice.  It's now time to configure Home Assistant to how the light switch, theme and animation speeds.
+
+Doing this is super simple, just navigate to the end of the configuration.yaml file and past in the particial Configuration.yaml file that DrZzs provided.
+
+Now check the configuration file and reboot the server.
+
+Once the server is up and running, you should see the new buttons added.
+
+
+
 
 
 
