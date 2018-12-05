@@ -88,12 +88,15 @@ Next.... updating the Arduino
 
 FAQ
 Q. Why are the first 10 or so lights turning on but the rest of the string is off?
+
 A.  If you didn't use a power supply, you'll need to purchase the above.  If you have the power supply connected, then the code you have on the Arduino is not properly configured or you are using the wrong pin.
 
 Q. My switches are not using up on Home Assistant
+
 A. Did you install the 3rd party MQTT add-in? I would suggest removing it and using the built-in broker.
 
 Q. I noticed after I restarted my server that there are errors.
+
 A. Click on the error and review the error in the configuration.yaml file.  Likely the problem will exist there since nothing else is changing.
 
 
