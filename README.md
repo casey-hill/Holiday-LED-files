@@ -128,8 +128,14 @@ I would strongly recommend using a breadboard at this point.
 
 Wire up the bread board using this diagram; again I'm using the alternative board because I didn't want to have the issues with distance using the data pin.
 
-![5v wiring](https://github.com/casey-hill/Holiday-LED-files/blob/master/images/entire%20package.PNG)
+For use the wiring diagram as shown.
 
+![5v wiring](https://github.com/casey-hill/Holiday-LED-files/blob/master/images/entire%20package%20v2.PNG)
+
+
+
+
+### Additional Pictures
 
 
 
