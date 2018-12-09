@@ -113,8 +113,22 @@ The other pain I had was the chip DrZzs uses would not work on D4, only until I 
 
 This area was a little lacking in the videos and I had to make a few decisions.  
 
-**PowerSupply**
-First, you going to need a powercord to plug-in to the power supply.  If you don't know which one is "N" vs "L", you should!  Here is the easy way to tell, I looked at my cord to determine which one the larger end was and used ![this diagram](https://github.com/casey-hill/Holiday-LED-files/blob/master/images/power%20outlet.PNG) to trace the wire.
+#### PowerSupply
+
+*First*
+
+you going to need a powercord to plug-in to the power supply.  If you don't know which one is "N" vs "L", you should!  Here is the easy way to tell, I looked at my cord to determine which one the larger (the two prongs), traced the wire to the end and use this diagram.  
+
+(https://github.com/casey-hill/Holiday-LED-files/blob/master/images/power%20outlet.PNG) 
+
+
+*Second*
+
+I would strongly recommend using a breadboard at this point.
+
+Wire up the bread board using this diagram; again I'm using the alternative board because I didn't want to have the issues with distance using the data pin.
+
+(https://github.com/casey-hill/Holiday-LED-files/blob/master/images/entire%20package.PNG)
 
 
 
