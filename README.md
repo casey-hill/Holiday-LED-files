@@ -1,13 +1,14 @@
 Here's my guide to building the Holiday LED lights. This guide is designed to help those who haven't been using Home Assistant in the past or for those who are trying to understand where things are broken. I'm also going to provide some key tips to avoid some extra work.
 I have enough experience with Arduino and Smartthings; I figured this wouldn't be too hard but found most guides are out of date and it was a challenge to troubleshoot.
 Why recreate what other's have done? I found many guides out there but struggled to understand how to programtically identify what my problems where. I hope this guide will help those wehre I struggled.
-Summary: I followed DrZzs guide (https://www.youtube.com/watch?v=6Y6jUM1OaYM&t=1s) which motivied me to create this guide but also used Ben's videos too (https://www.youtube.com/watch?v=9KI36GTgwuQ). Ben's are great to get up and running and DrZze's guide helped me understand more about the LEDs.
+Summary: I followed [DrZzs guide](https://www.youtube.com/watch?v=6Y6jUM1OaYM&t=1s) which motivied me to create this guide but also used [Ben's videos too](https://www.youtube.com/watch?v=9KI36GTgwuQ). Ben's are great to get up and running and DrZze's guide helped me understand more about the LEDs.
 
-Hardware (Home Assistant) ~$60
-https://www.amazon.com/gp/product/B01CD5VC92/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1
-https://www.amazon.com/gp/product/B011RBJUOC/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1
-https://www.amazon.com/gp/product/B00MARDJZ4/ref=oh_aui_detailpage_o05_s02?ie=UTF8&psc=1
-https://www.amazon.com/gp/product/B06XX29S9Q/ref=oh_aui_detailpage_o05_s02?ie=UTF8&psc=1
+**Hardware (Home Assistant) ~$60**
+
+* https://www.amazon.com/gp/product/B01CD5VC92/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1
+* https://www.amazon.com/gp/product/B011RBJUOC/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1
+* https://www.amazon.com/gp/product/B00MARDJZ4/ref=oh_aui_detailpage_o05_s02?ie=UTF8&psc=1
+* https://www.amazon.com/gp/product/B06XX29S9Q/ref=oh_aui_detailpage_o05_s02?ie=UTF8&psc=1
 
 **Software is free**
 
@@ -27,30 +28,32 @@ https://www.amazon.com/gp/product/B06XX29S9Q/ref=oh_aui_detailpage_o05_s02?ie=UT
 * [J-Channel](https://www.homedepot.com/p/Metal-Sales-2-in-x-10-5-ft-J-Channel-Drip-Edge-Flashing-in-White-4227430/204256712)
 
 **Optional**
+
 These are things I used or found helpful during my installation. I wanted to make my board more modualar and also overcome some challenges.
 * [PBC board](https://www.amazon.com/gp/product/B01N3161JP/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)
-* [Male/Female pins}(https://www.amazon.com/gp/product/B074HVBTZ4/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)
+* [Male/Female pins](https://www.amazon.com/gp/product/B074HVBTZ4/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)
 * [Male/Female connectors](https://www.amazon.com/gp/product/B00NBSH4CA/ref=oh_aui_detailpage_o04_s01?ie=UTF8&psc=1)
 * [Logic Shifter](https://www.amazon.com/gp/product/B0148BLZGE/ref=oh_aui_detailpage_o04_s02?ie=UTF8&psc=1)
 
-Tools
-Sodering iron + sodder
-Drill
-1/2 drill bit
-philips screw driver
-saw horse
-two childern
-ladder
-3D printer
-wire strippers
-screws
+**Tools**
+* Sodering iron + sodder
+* Drill
+* 1/2 drill bit
+* philips screw driver
+* saw horse
+* two childern
+* ladder
+* 3D printer
+* wire strippers
+* screws
 
-Overall process
-Home assistant OS install
-Home assistant configuration
-Home assisant configure MQTT
-Home assistant add the lights
-Home Assistant OS install
+**Overall process**
+
+* Home assistant OS install
+* Home assistant configuration
+* Home assisant configure MQTT
+* Home assistant add the lights
+* Home Assistant OS install
 
 I had actually no problems following the setup guides mentioned online. DrZzes tells you to follow Ben's video which I linked above. However things have changed since Ben's video. If you follow his guide completely, you'll end up running into trouble.
 Follow his video https://www.youtube.com/watch?v=9KI36GTgwuQ to install the home assistant OS on the card, place the card in the Pi and power it up. I'm going to assume you can figure out how to connect at this point, you should assign it a static ip address and connect via ip address as opposed to the the name of the Pi.
