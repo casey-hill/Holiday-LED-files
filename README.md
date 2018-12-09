@@ -62,6 +62,8 @@ These are things I used or found helpful during my installation. I wanted to mak
 * Home assisant configure MQTT
 * Home assistant add the lights
 * Uploading the Arduino Code
+* Installing the hardware
+
 
 ### Home assitant OS install
 
@@ -106,6 +108,13 @@ Generally speaking, there were minor changes here for this to work.  I would sta
 
 The other pain I had was the chip DrZzs uses would not work on D4, only until I changed it to just 5 did I see things working.  
 
+
+### Installing the hardware
+
+This area was a little lacking in the videos and I had to make a few decisions.  
+
+**PowerSupply**
+First, you going to need a powercord to plug-in to the power supply.  If you don't know which one is "N" vs "L", you should!  Here is the easy way to tell, I looked at my cord to determine which one the larger end was and used ![this diagram](https://github.com/casey-hill/Holiday-LED-files/blob/master/images/power%20outlet.PNG) to trace the wire.
 
 
 
