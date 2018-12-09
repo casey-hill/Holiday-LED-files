@@ -124,18 +124,41 @@ you going to need a powercord to plug-in to the power supply.  If you don't know
 
 *Second*
 
-I would strongly recommend using a breadboard at this point.
+I would strongly recommend using a breadboard at this point.  If things don't work, you'll want to rewire and there is no better way than a breadboard.
 
-Wire up the bread board using this diagram; again I'm using the alternative board because I didn't want to have the issues with distance using the data pin.
+Wire up the breadboard using this diagram; again I'm not using the D1 board because I didn't want to have the issues with distance using the data pin.  I also didn't get a chance to try out D1 using the logic shifter due to time.
 
-For use the wiring diagram as shown.
+Use the wiring diagram as shown.
 
 ![5v wiring](https://github.com/casey-hill/Holiday-LED-files/blob/master/images/entire%20package%20v2.PNG)
+
+
+**STOP**
+Before you do anything else, you should try turning off the lights/on and changing the themes. At this point, I plugged in everything and just made sure it all worked.   
+
+
+*Third*
+
+Short version, I installed the j-channel with the lights to the roof, plugged in the arduino to verify everything was working.  After the mounting, I went back and installed the power/data cables.  Finally completed everything by mounting the box and the electronics in the box.
+
+J-Channel needs to be drilled every 3 inches using the template; you can print it yourself or make your own with wood or metal.  The holes are 3 inches; I started my holes 1.5" from the end.
+
+This is where the 2 teenagers can help out.  This is a time consuming process and takes about 10 minutes for each 12' J-Channel.
+![J-Channel](https://github.com/casey-hill/Holiday-LED-files/blob/master/images/J-Channel.jpg)
+
+You might recall, the female end of the lights must be the end you start with.  The data line starts there and repeats the signal.  If you install the lights in the J-Channel wrong, don't worry, you can pull them all out and start over like I did.
+
+Generally, speaking, the gutters held the j-channel in place and I didn't have to scren them to the soffet.
+
+
+
+
 
 
 
 
 ### Additional Pictures
+
 
 
 
@@ -145,7 +168,7 @@ For use the wiring diagram as shown.
 
 **A.** If you didn't use a power supply, you'll need to purchase the above. If you have the power supply connected, then the code you have on the Arduino is not properly configured or you are using the wrong pin.  Also, the D1 chip doesn't push a full 5 volts which is why only a few work and then it fades out quickly.
 
-**Q.**  My switches are not using up on Home Assistant
+**Q.**  My switches are not showing up on Home Assistant
 
 **A.**  Did you install the 3rd party MQTT add-in? I would suggest removing it and using the built-in broker.
 
