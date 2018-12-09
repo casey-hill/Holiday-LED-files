@@ -1,7 +1,12 @@
 Here's my guide to building the Holiday LED lights. This guide is designed to help those who haven't been using Home Assistant in the past or for those who are trying to understand where things are broken. I'm also going to provide some key tips to avoid some extra work.
+
 I have enough experience with Arduino and Smartthings; I figured this wouldn't be too hard but found most guides are out of date and it was a challenge to troubleshoot.
+
 Why recreate what other's have done? I found many guides out there but struggled to understand how to programtically identify what my problems where. I hope this guide will help those wehre I struggled.
-Summary: I followed [DrZzs guide](https://www.youtube.com/watch?v=6Y6jUM1OaYM&t=1s) which motivied me to create this guide but also used [Ben's videos too](https://www.youtube.com/watch?v=9KI36GTgwuQ). Ben's are great to get up and running and DrZze's guide helped me understand more about the LEDs.
+
+**Summary:**
+
+ I followed [DrZzs guide](https://www.youtube.com/watch?v=6Y6jUM1OaYM&t=1s) which motivied me to create this guide but also used [Ben's videos too](https://www.youtube.com/watch?v=9KI36GTgwuQ). Ben's are great to get up and running and DrZze's guide helped me understand more about the LEDs.
 
 **Hardware (Home Assistant) ~$60**
 
@@ -55,33 +60,63 @@ These are things I used or found helpful during my installation. I wanted to mak
 * Home assistant add the lights
 * Home Assistant OS install
 
+***Home assitant OS install***
+
 I had actually no problems following the setup guides mentioned online. DrZzes tells you to follow Ben's video which I linked above. However things have changed since Ben's video. If you follow his guide completely, you'll end up running into trouble.
-Follow his video https://www.youtube.com/watch?v=9KI36GTgwuQ to install the home assistant OS on the card, place the card in the Pi and power it up. I'm going to assume you can figure out how to connect at this point, you should assign it a static ip address and connect via ip address as opposed to the the name of the Pi.
+Follow [Ben's video](https://www.youtube.com/watch?v=9KI36GTgwuQ) to install the home assistant OS on the card, place the card in the Pi and power it up. I'm going to assume you can figure out how to connect at this point, you should assign it a static ip address and connect via ip address as opposed to the the name of the Pi.
+
 Now, it is imporant to undestand, Ben provides a lot of good tips in the entire video so please watch it all. I'll call out his tips on: checking the configuration file and restarting the server. I would ignore the MQTT installation and Samba installation sections as they are not necessary for this setup.
+
+***Home assitant Configuration***
+
 Configuration of Home Assistant Walk through the setup questions. Once you are logged in, you will want to install the web based editor. Ben described how to do this above, so this is one step you will follow. That is it, you don't need to install or add anything additional. MQTT broker is already installed on this version of the Hass.io.
-TIP - Edit your configuraiton.yaml file. Add one line to the end of the file (later you'll be asked for the username which is in the documentatation; homeassistant); you don't need to put in a ip address or port number as others have mentioned
-MQTT password: makeoneyoucanremember
+
+**TIP** - Edit your configuraiton.yaml file. Add one line to the end of the file (later you'll be asked for the username which is in the documentatation; homeassistant); you don't need to put in a ip address or port number as others have mentioned
+
+MQTT
+ 
+    password: makeoneyoucanremember
+	
 
 At this point, do a configuration file check and reboot the server.
+
 Once the Home Assistant is up and running, check the log file to verify there are no issues.
-Home Assistant MQTT Configuration
+
+
+**Home Assistant MQTT Configuration**
 
 As I mentioned above, all you need to do is add MQTT at the end of the configuration.yaml file and add the password. Don't specifiy the username as it is already preconfigured as homeassistant.
-Home Assistant adding the lights
+
+**Home Assistant adding the lights**
+
 Up to this point, you have installed Home Assistant and enabled the use of MQTT with a password of your choice. It's now time to configure Home Assistant to how the light switch, theme and animation speeds.
+
 Doing this is super simple, just navigate to the end of the configuration.yaml file and past in the particial Configuration.yaml file that DrZzs provided.
+
 Now check the configuration file and reboot the server.
+
 Once the server is up and running, you should see the new buttons added.
 
-Next.... updating the Arduino
+**Next.... updating the Arduino**
 
-FAQ 
+...
 
-Why are the first 10 or so lights turning on but the rest of the string is off?
-If you didn't use a power supply, you'll need to purchase the above. If you have the power supply connected, then the code you have on the Arduino is not properly configured or you are using the wrong pin.
+...
 
-Q My switches are not using up on Home Assistant
-A Did you install the 3rd party MQTT add-in? I would suggest removing it and using the built-in broker.
+...
 
-Q. I noticed after I restarted my server that there are errors. 
-A. Click on the error and review the error in the configuration.yaml file. Likely the problem will exist there since nothing else is changing.
+
+
+**FAQ** 
+
+**Q.** Why are the first 10 or so lights turning on but the rest of the string is off?
+
+**A.** If you didn't use a power supply, you'll need to purchase the above. If you have the power supply connected, then the code you have on the Arduino is not properly configured or you are using the wrong pin.
+
+**Q.**  My switches are not using up on Home Assistant
+
+**A.**  Did you install the 3rd party MQTT add-in? I would suggest removing it and using the built-in broker.
+
+**Q.** I noticed after I restarted my server that there are errors. 
+
+**A.** Click on the error and review the error in the configuration.yaml file. Likely the problem will exist there since nothing else is changing.
