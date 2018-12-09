@@ -31,6 +31,13 @@ Lights
 - PowerSupply https://www.amazon.com/gp/product/B06XK3X3PW/ref=od_aui_detailpages00?ie=UTF8&psc=1
 - J-Channel https://www.homedepot.com/p/Metal-Sales-2-in-x-10-5-ft-J-Channel-Drip-Edge-Flashing-in-White-4227430/204256712
 
+Optional
+These are things I used or found helpful during my installation.  I wanted to make my board more modualar and also overcome some challenges.
+- PBC board https://www.amazon.com/gp/product/B01N3161JP/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1
+- Male/Female pins https://www.amazon.com/gp/product/B074HVBTZ4/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1
+- Male/Female connectors https://www.amazon.com/gp/product/B00NBSH4CA/ref=oh_aui_detailpage_o04_s01?ie=UTF8&psc=1
+- Logic Shifter https://www.amazon.com/gp/product/B0148BLZGE/ref=oh_aui_detailpage_o04_s02?ie=UTF8&psc=1
+
 Tools
 - Sodering iron + sodder
 - Drill
