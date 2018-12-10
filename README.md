@@ -150,6 +150,7 @@ You might recall, the female end of the lights must be the end you start with.  
 
 Generally, speaking, the gutters held the j-channel in place and I didn't have to scren them to the soffet.
 
+I also made a 3D part ![part one](https://github.com/casey-hill/Holiday-LED-files/blob/master/stl/J-Channel%20Cap%20with%20hole.stl) to cap off the J-Channel; one has a hole for wires while the other has no holes at all.
 
 
 
